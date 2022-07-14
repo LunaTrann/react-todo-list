@@ -1,0 +1,69 @@
+.strike {
+  text-decoration: line-through;
+}
+
+h1 {
+  font-family: Luminari, fantasy;
+  font-stretch: semi-expanded;
+  /* font-variant: small-caps; */
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bg__img {
+  background-image: url("assets/paper.jpeg");
+  width: 100vh;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+input[type=text],
+input[type=password] {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: inherit;
+  margin: 10px 0;
+  font-family: inherit;
+  height: 30px;
+  padding: 5px 18px;
+
+
+}
+
+button {
+  background-color: #3CB371;
+  color: white;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+
+}
+
+.container {
+  width: 300px;
+}
