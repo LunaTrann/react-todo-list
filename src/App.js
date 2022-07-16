@@ -45,8 +45,8 @@ function App() {
         <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/todo" element={
           <Protected isLoggedIn={true}>
-            <ToDoList myList={list} handleFilter={handleFilter} handleToggle={handleToggle} />
-            <ToDoForm addTask={addTask} />
+            <ToDoList myList={list} handleToggle={handleToggle} />
+            <ToDoForm addTask={addTask} handleFilter={handleFilter} />
           </Protected>
         } />
       </Routes>

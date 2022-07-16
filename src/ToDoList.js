@@ -4,15 +4,13 @@ import Header from './Header';
 
 const ToDoList = ({ myList, handleFilter, handleToggle }) => {
   return (
-    <div>
+    <div className='listContainer'>
       <Header />
       {myList.map((todo, index) => {
         return (
           <ToDo key={index} index={index} todo={todo} handleToggle={handleToggle} />
         )
       })}
-
-      <button style={{ margin: '50px' }} onClick={handleFilter}>Clear Complete</button>
     </div>
   );
 };
